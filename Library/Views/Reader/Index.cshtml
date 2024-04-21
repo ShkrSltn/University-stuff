@@ -1,0 +1,173 @@
+﻿<html>
+<head>
+<link href="~/css/site.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body onload="Load_Form()">
+
+    <div class="topnav2">
+  <a href =# class = "button3" onclick="Find_by_name()">Найти по названию</a>
+  <a href =# class = "button3" onclick="Find_by_author()">Найти по автору</a>
+  <a href =# class = "button3" onclick="Find_by_publisher()">Найти по изданию</a>
+  <a href =# class = "button3" onclick="All_Books()">Все книги</a>
+  <a href =# class = "button3" onclick="Booked()" color="red">Забронированые книги</a>
+  <a href="/Login">Выход</a>
+</div>
+
+
+<div class="form-group col-md-4" id="Find_book_by_name">
+        <h1>Найти книгу по названию</h1>
+        <form action="/Reader/Find_Book">
+                    <input class="form-control" placeholder="Название книги" type="text" name="name_book" />
+                   <br /> <button class="btn btn-outline-dark" type="submit">Найти</button>
+        </form>
+    </div>
+
+      <div class="form-group col-md-4" id="Find_book_by_author">
+        <h1>Найти книгу по автору</h1>
+        <form action="/Reader/Find_Author">
+                    <input class="form-control" placeholder="Автор" type="text" name="name_author" />
+                   <br /> <button class="btn btn-outline-dark" type="submit">Найти</button>
+        </form>
+    </div>
+    <div class="form-group col-md-4" id="Find_book_by_publsher">
+        <h1>Найти книгу по изданию</h1>
+        <form action="/Reader/Find_Publisher">
+                    <input class="form-control" placeholder="Издатель" type="text" name="name_publisher" />
+                    <br /><button class="btn btn-outline-dark" type="submit">Найти</button>
+        </form>
+    </div>
+
+
+
+    @if (@ViewBag.Message.str_message != "")
+    {
+        @if (@ViewBag.Message.error == true)
+        {
+            <div id="Message" onclick="Message_Close()">
+                <h3>Ошибка @ViewBag.Message.str_message</h3>
+            </div>
+        }
+        else
+        {
+            <div id="Message" onclick="Message_Close()">
+                <h3>@ViewBag.Message.str_message</h3>
+                <button>Отдать</button>
+            </div>
+        }
+    }
+
+<div id="Book_Content" >
+    <center><h1>Список книг</h1></center>
+    <br />@foreach (var b in @ViewBag.Books)
+    {
+        <div class="finded_books">
+            <p class="book_name">@b.name_book</p>
+            <p>Автор: @b.str_author</p>
+            <p>Издатель: @b.str_publisher</p>
+            <p>Количество: @b.number_of_copies</p>
+            <a class="button4" href="/Reader/Request_Book?name=@b.name_book">Забронировать</a>
+        </div>
+    }
+    </div>
+
+    <div id="Book_Content2" >
+    @foreach (var b in @ViewBag.Bookeds)
+    {
+        <div>
+            <p>@b.name_book</p>
+            <p>автор: @b.str_author</p>
+            <p>Издание: @b.str_publisher</p>
+            <button href="/Reader/Cancel_Booking?id=@b.id">Убрать бронь </button>
+        </div>
+    }
+    </div>
+
+    <script>
+        let form_by_name;
+        let form_by_author;
+        let form_by_publiher;
+        let form_book_content;
+
+        function Load_Form() {
+            form_by_name = document.getElementById("Find_book_by_name");
+            form_by_author = document.getElementById("Find_book_by_author");
+            form_by_publiher = document.getElementById("Find_book_by_publsher");
+            form_book_content = document.getElementById("Book_Content");
+
+            document.getElementById("Find_book_by_name").remove();
+            document.getElementById("Find_book_by_author").remove();
+            document.getElementById("Find_book_by_publsher").remove();
+        }
+
+        function Find_by_name() {
+            if (document.getElementById("Find_book_by_author") != null)
+                document.getElementById("Find_book_by_author").remove();
+            if (document.getElementById("Find_book_by_publsher") != null)
+                document.getElementById("Find_book_by_publsher").remove();
+            if (document.getElementById("Book_Content") != null)
+                document.getElementById("Book_Content").remove();
+
+            document.body.appendChild(form_by_name);
+        }
+
+        function Find_by_author() {
+            if (document.getElementById("Find_book_by_name") != null)
+                document.getElementById("Find_book_by_name").remove();
+            if (document.getElementById("Find_book_by_publsher") != null)
+                document.getElementById("Find_book_by_publsher").remove();
+            if (document.getElementById("Book_Content") != null)
+                document.getElementById("Book_Content").remove();
+
+            document.body.appendChild(form_by_author);
+        }
+
+        function Find_by_publisher() {
+            if (document.getElementById("Find_book_by_name") != null)
+                document.getElementById("Find_book_by_name").remove();
+            if (document.getElementById("Find_book_by_author") != null)
+                document.getElementById("Find_book_by_author").remove();
+            if (document.getElementById("Book_Content") != null)
+                document.getElementById("Book_Content").remove();
+
+            document.body.appendChild(form_by_publiher);
+        }
+
+        function All_Books() {
+            var request = new XMLHttpRequest();
+            function reqReadyStateChange() {
+                if (request.readyState == 4) {
+                    var status = request.status;
+                    if (status == 200) {
+                        document.getElementById("output").innerHTML = request.responseText;
+                    }
+                }
+            }
+            request.open("GET", "/Reader/All_Book");
+            request.onreadystatechange = reqReadyStateChange;
+            request.send();
+            location.reload();
+        }
+
+        function Booked() {
+            var request = new XMLHttpRequest();
+            function reqReadyStateChange() {
+                if (request.readyState == 4) {
+                    var status = request.status;
+                    if (status == 200) {
+                        document.getElementById("output").innerHTML = request.responseText;
+                    }
+                }
+            }
+            request.open("GET", "/Reader/Booked");
+            request.onreadystatechange = reqReadyStateChange;
+            request.send();
+            location.reload();
+        }
+
+        function Message_Close() {
+            document.getElementById("Message").remove();
+        }
+    </script>
+</body>
+</html>

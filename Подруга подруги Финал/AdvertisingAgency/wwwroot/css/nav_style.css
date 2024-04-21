@@ -1,0 +1,58 @@
+﻿﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+header {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    background-color: #EFEFEF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main_nav {
+    width: 100%;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #0a451c;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+
+.pet_icon {
+    margin-top: 50px;
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main_nav li {
+    float: left;
+}
+
+    .main_nav li a {
+        display: block;
+        color: #EFEFEF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition-duration: 0.4s;
+    }
+
+        .main_nav li a:hover {
+            color: #3ae06d;
+        }
+
+.active {
+    background: #3ae06d;
+}
+
+    .active a:hover {
+        background: #043613;
+    }
+
+
+.main_icon {
+    text-align: center;
+}

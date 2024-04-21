@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\прога\CycleListLab\bin\Debug\netcoreapp3.1\CycleListLab.exe
+C:\Users\User\Desktop\прога\CycleListLab\bin\Debug\netcoreapp3.1\CycleListLab.deps.json
+C:\Users\User\Desktop\прога\CycleListLab\bin\Debug\netcoreapp3.1\CycleListLab.runtimeconfig.json
+C:\Users\User\Desktop\прога\CycleListLab\bin\Debug\netcoreapp3.1\CycleListLab.runtimeconfig.dev.json
+C:\Users\User\Desktop\прога\CycleListLab\bin\Debug\netcoreapp3.1\CycleListLab.dll
+C:\Users\User\Desktop\прога\CycleListLab\bin\Debug\netcoreapp3.1\CycleListLab.pdb
+C:\Users\User\Desktop\прога\CycleListLab\obj\Debug\netcoreapp3.1\CycleListLab.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\прога\CycleListLab\obj\Debug\netcoreapp3.1\CycleListLab.AssemblyInfo.cs
+C:\Users\User\Desktop\прога\CycleListLab\obj\Debug\netcoreapp3.1\CycleListLab.dll
+C:\Users\User\Desktop\прога\CycleListLab\obj\Debug\netcoreapp3.1\CycleListLab.pdb

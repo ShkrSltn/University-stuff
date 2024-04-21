@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/ssult/OneDrive/Desktop/Labs/Lab7/Lab_7.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/ssult/OneDrive/Desktop/Labs/Lab7/db/Lab_7.cbx.xml
+design_name = hard_block
+design_name = lab_7
+instance = comp, \Q~output\, Q~output, lab_7, 1
+instance = comp, \C~input\, C~input, lab_7, 1
+instance = comp, \DFF_inst~0\, DFF_inst~0, lab_7, 1

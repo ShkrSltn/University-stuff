@@ -1,0 +1,15 @@
+D:\С# Проэкти\Lab_1_IA\bin\Debug\netcoreapp3.1\Lab_1_IA.exe
+D:\С# Проэкти\Lab_1_IA\bin\Debug\netcoreapp3.1\Lab_1_IA.deps.json
+D:\С# Проэкти\Lab_1_IA\bin\Debug\netcoreapp3.1\Lab_1_IA.runtimeconfig.json
+D:\С# Проэкти\Lab_1_IA\bin\Debug\netcoreapp3.1\Lab_1_IA.runtimeconfig.dev.json
+D:\С# Проэкти\Lab_1_IA\bin\Debug\netcoreapp3.1\Lab_1_IA.dll
+D:\С# Проэкти\Lab_1_IA\bin\Debug\netcoreapp3.1\Lab_1_IA.pdb
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.csprojAssemblyReference.cache
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.Form1.resources
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.csproj.GenerateResource.cache
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.AssemblyInfoInputs.cache
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.AssemblyInfo.cs
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.csproj.CoreCompileInputs.cache
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.dll
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.pdb
+D:\С# Проэкти\Lab_1_IA\obj\Debug\netcoreapp3.1\Lab_1_IA.genruntimeconfig.cache

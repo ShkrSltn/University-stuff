@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'C'
+Slack : -0.515
+TNS   : -0.515
+
+Type  : Slow 1200mV 85C Model Setup 'synthesized_var_for_JKFF_inst1'
+Slack : -0.252
+TNS   : -0.252
+
+Type  : Slow 1200mV 85C Model Setup 'synthesized_var_for_JKFF_inst'
+Slack : -0.190
+TNS   : -0.190
+
+Type  : Slow 1200mV 85C Model Setup 'synthesized_var_for_JKFF_inst2'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'synthesized_var_for_JKFF_inst'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'synthesized_var_for_JKFF_inst2'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'C'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'synthesized_var_for_JKFF_inst1'
+Slack : 0.505
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'C'
+Slack : -0.383
+TNS   : -0.383
+
+Type  : Slow 1200mV 0C Model Setup 'synthesized_var_for_JKFF_inst1'
+Slack : -0.185
+TNS   : -0.185
+
+Type  : Slow 1200mV 0C Model Setup 'synthesized_var_for_JKFF_inst'
+Slack : -0.127
+TNS   : -0.127
+
+Type  : Slow 1200mV 0C Model Setup 'synthesized_var_for_JKFF_inst2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'synthesized_var_for_JKFF_inst'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'synthesized_var_for_JKFF_inst2'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'C'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'synthesized_var_for_JKFF_inst1'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'C'
+Slack : -0.126
+TNS   : -0.126
+
+Type  : Fast 1200mV 0C Model Setup 'synthesized_var_for_JKFF_inst1'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'synthesized_var_for_JKFF_inst'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'synthesized_var_for_JKFF_inst2'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'synthesized_var_for_JKFF_inst'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'synthesized_var_for_JKFF_inst2'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'synthesized_var_for_JKFF_inst1'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'C'
+Slack : 0.275
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -4.092
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'synthesized_var_for_JKFF_inst2'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

@@ -1,0 +1,11 @@
+|Lab_4
+C => var_for_QforJK4.CLK
+C => var_for_QforJK3.CLK
+C => var_for_QforJK2.CLK
+C => var_for_QforJK1.CLK
+Q0 <= var_for_QforJK1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= var_for_QforJK2.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= var_for_QforJK3.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= var_for_QforJK4.DB_MAX_OUTPUT_PORT_TYPE
+
+

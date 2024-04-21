@@ -1,0 +1,131 @@
+Create Table Position(
+	id Serial Primary Key,
+	name Varchar(20) Not Null,
+	salary decimal(10,2) Not Null
+);
+
+Insert Into Position(name,salary) Values('Director', 40000);
+Insert Into Position(name,salary) Values('Manager', 25000);
+Insert Into Position(name,salary) Values('Creative Manager', 20000);
+
+Create Table Staff(
+	id Serial Primary Key,
+	First_name Varchar(20) Not Null,
+	Last_name Varchar(20) Not Null,
+	Date_of_birthday Date Not Null,
+	Sex Varchar(10) Not Null,
+	Tel Varchar(13) Not Null,
+	Password Varchar(30) Not Null
+);
+
+Insert Into Staff(first_name,last_name,date_of_birthday,sex,tel,password) Values('Олександр','Гаврилко','2001-02-15','m','+380996305684','1');
+
+Create Table Staff_Position(
+	id Serial Primary Key,
+	staff_id Integer References Staff(id) Not Null,
+	position_id Integer References Position(id) Not Null,
+	start_Work Date Not Null,
+	end_Work Date
+);
+
+Insert Into Staff_Position(staff_id,position_id,start_work) Values(1,1,'2016-05-27');
+
+Create Table Client_Company(
+	id Serial Primary Key,
+	Company_name Varchar(50) Not Null,
+	Director Varchar(20) Not Null,
+	City Varchar(30) Not Null,
+	Street Varchar(30) Not Null,
+	First_name Varchar(20) Not Null,
+	Last_name Varchar(20) Not Null,
+	Tel Varchar(13) Not Null,
+	Email Varchar Not Null,
+	Password Varchar(30) Not Null
+);
+
+Create Table Preference_List(
+	id Serial Primary Key,
+	Client_id Integer References Client_Company(id),
+	Audience Varchar(20) Not Null,
+	Preculiarities Varchar(300) Not Null,
+	Period Integer Not Null,
+	Max_sum decimal(10,2) Not Null
+);
+
+Create Table Partners(
+	id Serial Primary Key,
+	name Varchar(50) Not Null
+);
+
+Create Table Type_of_Service(
+	id Serial Primary Key,
+	Platform_type Varchar(50) Not Null,
+	Partners_id Integer References Partners(id),
+	Price decimal(10,2) Not Null
+);
+
+Create Table Media_plan(
+	id Serial Primary Key,
+	Preference_list_id Integer References Preference_list(id),
+	Type_of_service_id Integer References Type_of_service(id),
+	Staff_id Integer References Staff(id),
+	Broadcast_Time Integer Not Null,
+	Price decimal(10,2) Not Null,
+	Status Boolean Not Null
+);
+
+Create Table Creative_work(
+	id Serial Primary Key,
+	Media_plan_id Integer References Media_Plan(id),
+	Work_Status Boolean Not Null,
+	Worker_id Integer References Staff(id),
+	Specification Varchar(50) Not Null,
+	Description Text Not Null
+);
+
+Create Table Contract(
+	id Serial Primary Key,
+	Company_name Varchar(50) Not Null,
+	First_Name Varchar(30) Not Null,
+	Last_Name Varchar(30) Not Null,
+	Total_sum Decimal(10,2) Not Null,
+	Post_Code Varchar(30) Not Null,
+	INN Integer Not Null,
+	Payment_Method Varchar(20) Not NUll,
+	Status Varchar(20) Not Null
+);
+
+Create Table Before_the_contract(
+	id Serial Primary Key,
+	Media_Plan_id Integer References Media_plan(id),
+	Contract_id Integer References Contract(id),
+	Start_date Date Not Null,
+	End_Date Date Not Null
+);
+
+
+Create Role Director Login Password 'director';
+Create Role Managers Login Password 'managers';
+Create Role CreativeManager Login Password 'creativemanager';
+Create Role Client Login Password 'client';
+Create Role LoginTo Login Password 'loginto';
+
+Grant Select On position, staff, staff_Position, client_company, preference_list, partners, type_of_service, media_plan, creative_work, contract, before_the_contract To Director;
+Grant Insert, Update On staff, staff_position, partners, type_of_service, contract, before_the_contract To Director;
+
+Grant Select On position, staff, staff_Position, client_company, preference_list, partners, type_of_service, media_plan, creative_work To Managers;
+Grant Insert, Update On media_plan, creative_work To Managers;
+
+Grant Select On position, staff, staff_position, preference_list, media_plan, creative_work To CreativeManager;
+Grant Update On creative_work To CreativeManager;
+
+Grant Select On client_company, preference_list, partners, type_of_service, media_plan, contract, before_the_contract To Client;
+Grant Insert, Update On preference_list, contract, before_the_contract To Client;
+
+Grant Select, Update On staff_id_seq, staff_position_id_seq, partners_id_seq, type_of_service_id_seq, contract_id_seq, before_the_contract_id_seq To Director;
+Grant Select, Update On media_plan_id_seq, creative_work_id_seq To Managers;
+Grant Select, Update On preference_list_id_seq, contract_id_seq, before_the_contract_id_seq To Client;
+
+Grant Select On position, staff, staff_position, client_company To LoginTo;
+Grant Select, Update On client_company_id_seq To LoginTo;
+Grant Insert On client_company To LoginTo;

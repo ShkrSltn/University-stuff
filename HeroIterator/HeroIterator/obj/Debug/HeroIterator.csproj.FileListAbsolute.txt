@@ -1,0 +1,7 @@
+C:\Users\Sultan\source\repos\HeroIterator\HeroIterator\obj\Debug\HeroIterator.csprojAssemblyReference.cache
+C:\Users\Sultan\source\repos\HeroIterator\HeroIterator\obj\Debug\HeroIterator.csproj.CoreCompileInputs.cache
+C:\Users\Sultan\source\repos\HeroIterator\HeroIterator\bin\Debug\HeroIterator.exe.config
+C:\Users\Sultan\source\repos\HeroIterator\HeroIterator\bin\Debug\HeroIterator.exe
+C:\Users\Sultan\source\repos\HeroIterator\HeroIterator\bin\Debug\HeroIterator.pdb
+C:\Users\Sultan\source\repos\HeroIterator\HeroIterator\obj\Debug\HeroIterator.exe
+C:\Users\Sultan\source\repos\HeroIterator\HeroIterator\obj\Debug\HeroIterator.pdb

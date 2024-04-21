@@ -1,0 +1,26 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+LIBRARY work;
+
+ENTITY lab_7 IS 
+	PORT
+	(
+		C :  IN  STD_LOGIC;
+		Q :  OUT  STD_LOGIC
+	);
+END lab_7;
+
+ARCHITECTURE bdf_type OF lab_7 IS 
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
+SIGNAL	DFF_inst :  STD_LOGIC;
+BEGIN 
+Q <= DFF_inst;
+
+PROCESS(C)
+BEGIN
+IF (FALLING_EDGE(C)) THEN
+	DFF_inst <= SYNTHESIZED_WIRE_0;
+END IF;
+END PROCESS;
+SYNTHESIZED_WIRE_0 <= NOT(DFF_inst);
+END bdf_type;

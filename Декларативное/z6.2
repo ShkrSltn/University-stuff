@@ -1,0 +1,25 @@
+domains
+int=integer
+intl=int*
+predicates
+nondeterm del_elt(int,intl,intl)
+nondeterm no_doubles(intl,intl)
+nondeterm read_list(intl)
+nondeterm task
+ 
+clauses
+del_elt(_,[],[]).
+del_elt(X,[X|T],R) :- del_elt(X,T,R).
+del_elt(X,[Y|T],[Y|R]) :-  X<>Y,del_elt(X,T,R).
+ 
+no_doubles([],[]).
+no_doubles([X|T],[X|R]) :- del_elt(X,T,Y),no_doubles(Y,R).
+ 
+read_list([L1|T]) :- readint(L1),!,read_list(T).
+read_list([]).
+
+
+task :- write("Vvedie spisok L1:"),nl,read_list(L1),no_doubles(L1,L2),write("Spisok L2: "),nl,write(L2),nl.
+ 
+goal
+task.

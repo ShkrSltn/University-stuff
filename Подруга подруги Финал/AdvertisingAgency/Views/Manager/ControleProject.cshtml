@@ -1,0 +1,58 @@
+﻿@using AdvertisingAgency.Models;
+@using AdvertisingAgency.Models.CompositeModel;
+
+<html>
+<body>
+    <nav>
+        <a href="/Manager">Главная</a>
+        <a href="/Manager/Out">Выход</a>
+    </nav>
+    <div>
+        <p>Возрастная группа @ViewBag.Media.preference.audience</p>
+        <p>Краткое содержание @ViewBag.Media.preference.preculiarities</p>
+        <p>Период @ViewBag.Media.preference.period</p>
+        <p>Максимальная сумма @ViewBag.Media.preference.max_sum</p>
+        <p>Количество показав в сутки @ViewBag.Media.mediaPlan.broadcast_time</p>
+        <p>Цена за услуги @ViewBag.Media.mediaPlan.price</p>
+    </div>
+    <div>
+        <p>Креативные менеджеры в проэкте</p>
+        @foreach (Staff_CreateWork staff in ViewBag.BusyStaff)
+        {
+            <div>
+                <p>@staff.staff.first_name</p>
+                <p>@staff.staff.last_name</p>
+                <p>@staff.staff.date_of_birthday</p>
+                <p>@staff.creativeWork.description</p>
+                <p>@staff.creativeWork.work_status</p>
+            </div>
+        }
+        <a href="/Manager/FinishMedia">Проэкт Готов</a>
+    </div>
+    <div>
+        <p>Добавить креативного менеджера в проэкт</p>
+        @foreach(Staff_StaffPosition_Position staff in ViewBag.CreativeManager)
+         {
+            <div>
+                <p>@staff.staff.first_name</p>
+                <p>@staff.staff.last_name</p>
+                <p>@staff.staff.date_of_birthday</p>
+                <form action="/Manager/AddStaffToProject">
+                    <ul>
+                        <li>
+                            <input type="number" name="id" value="@staff.staff.id" />
+                        </li>
+                        <li>
+                            <label>Спецификация</label>
+                        </li>
+                        <li>
+                            <input type="text" name="specifikation" />
+                        </li>
+                    </ul>
+                    <button type="submit">Добавить в проэкт</button>
+                </form>
+            </div>
+         }
+    </div>
+</body>
+</html>

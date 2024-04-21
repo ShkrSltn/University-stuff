@@ -1,0 +1,40 @@
+C:\Users\TatiHonya\source\repos\Contour\Contour\bin\Debug\Contour.exe.config
+C:\Users\TatiHonya\source\repos\Contour\Contour\bin\Debug\Contour.exe
+C:\Users\TatiHonya\source\repos\Contour\Contour\bin\Debug\Contour.pdb
+C:\Users\TatiHonya\source\repos\Contour\Contour\obj\Debug\Contour.csprojAssemblyReference.cache
+C:\Users\TatiHonya\source\repos\Contour\Contour\obj\Debug\Contour.Form1.resources
+C:\Users\TatiHonya\source\repos\Contour\Contour\obj\Debug\Contour.Properties.Resources.resources
+C:\Users\TatiHonya\source\repos\Contour\Contour\obj\Debug\Contour.csproj.GenerateResource.cache
+C:\Users\TatiHonya\source\repos\Contour\Contour\obj\Debug\Contour.csproj.CoreCompileInputs.cache
+C:\Users\TatiHonya\source\repos\Contour\Contour\obj\Debug\Contour.exe
+C:\Users\TatiHonya\source\repos\Contour\Contour\obj\Debug\Contour.pdb
+E:\Коды\Contour\Contour\bin\Debug\Contour.exe.config
+E:\Коды\Contour\Contour\bin\Debug\Contour.exe
+E:\Коды\Contour\Contour\bin\Debug\Contour.pdb
+E:\Коды\Contour\Contour\obj\Debug\Contour.csprojAssemblyReference.cache
+E:\Коды\Contour\Contour\obj\Debug\Contour.Form1.resources
+E:\Коды\Contour\Contour\obj\Debug\Contour.Properties.Resources.resources
+E:\Коды\Contour\Contour\obj\Debug\Contour.csproj.GenerateResource.cache
+E:\Коды\Contour\Contour\obj\Debug\Contour.csproj.CoreCompileInputs.cache
+E:\Коды\Contour\Contour\obj\Debug\Contour.exe
+E:\Коды\Contour\Contour\obj\Debug\Contour.pdb
+D:\комп графика\Contour\Contour\bin\Debug\Contour.exe.config
+D:\комп графика\Contour\Contour\bin\Debug\Contour.exe
+D:\комп графика\Contour\Contour\bin\Debug\Contour.pdb
+D:\комп графика\Contour\Contour\obj\Debug\Contour.csprojAssemblyReference.cache
+D:\комп графика\Contour\Contour\obj\Debug\Contour.Form1.resources
+D:\комп графика\Contour\Contour\obj\Debug\Contour.Properties.Resources.resources
+D:\комп графика\Contour\Contour\obj\Debug\Contour.csproj.GenerateResource.cache
+D:\комп графика\Contour\Contour\obj\Debug\Contour.csproj.CoreCompileInputs.cache
+D:\комп графика\Contour\Contour\obj\Debug\Contour.exe
+D:\комп графика\Contour\Contour\obj\Debug\Contour.pdb
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\bin\Debug\Contour.exe.config
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\bin\Debug\Contour.exe
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\bin\Debug\Contour.pdb
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\obj\Debug\Contour.csprojAssemblyReference.cache
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\obj\Debug\Contour.Form1.resources
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\obj\Debug\Contour.Properties.Resources.resources
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\obj\Debug\Contour.csproj.GenerateResource.cache
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\obj\Debug\Contour.csproj.CoreCompileInputs.cache
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\obj\Debug\Contour.exe
+D:\ВУЗ\Курс 3\Комп. графика\Contour\Contour\obj\Debug\Contour.pdb

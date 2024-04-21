@@ -1,0 +1,10 @@
+D:\С# Проэкти\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache
+D:\С# Проэкти\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+D:\С# Проэкти\Lab1\obj\Debug\Lab1.csproj.GenerateResource.cache
+D:\С# Проэкти\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+D:\С# Проэкти\Lab1\bin\Debug\Lab1.exe.config
+D:\С# Проэкти\Lab1\bin\Debug\Lab1.exe
+D:\С# Проэкти\Lab1\bin\Debug\Lab1.pdb
+D:\С# Проэкти\Lab1\obj\Debug\Lab1.exe
+D:\С# Проэкти\Lab1\obj\Debug\Lab1.pdb
+D:\С# Проэкти\Lab1\obj\Debug\Lab1.Form1.resources

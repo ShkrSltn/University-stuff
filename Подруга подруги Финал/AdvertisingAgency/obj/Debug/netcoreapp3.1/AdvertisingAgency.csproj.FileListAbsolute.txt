@@ -1,0 +1,169 @@
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.exe
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.deps.json
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.runtimeconfig.json
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.pdb
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.Views.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.AssemblyInfo.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\staticwebassets\AdvertisingAgency.StaticWebAssets.Manifest.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\staticwebassets\AdvertisingAgency.StaticWebAssets.xml
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\scopedcss\bundle\AdvertisingAgency.styles.css
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorTargetAssemblyInfo.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.pdb
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.genruntimeconfig.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.csproj.CopyComplete
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.Views.pdb
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorAssemblyInfo.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorAssemblyInfo.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.TagHelpers.input.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.TagHelpers.output.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorCoreGenerate.cache
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorTargetAssemblyInfo.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.Views.pdb
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Client\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\CreativeManager\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Director\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Director\Staff.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.exe
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.deps.json
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.runtimeconfig.json
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.pdb
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.Views.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\AdvertisingAgency.Views.pdb
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.AssemblyInfo.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorAssemblyInfo.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorAssemblyInfo.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\staticwebassets\AdvertisingAgency.StaticWebAssets.Manifest.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\staticwebassets\AdvertisingAgency.StaticWebAssets.xml
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\scopedcss\bundle\AdvertisingAgency.styles.css
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.TagHelpers.input.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.TagHelpers.output.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorCoreGenerate.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Client\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Client\Preference.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\CreativeManager\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Director\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Director\Staff.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Index.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorTargetAssemblyInfo.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorTargetAssemblyInfo.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.Views.pdb
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.csproj.CopyComplete
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.dll
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.pdb
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\AdvertisingAgency.genruntimeconfig.cache
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Director\Partner.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControleProject.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Preference.cshtml.g.cs
+C:\Users\Alex\Desktop\БД Настя\git\AdvenserAgenstv\obj\Debug\netcoreapp3.1\Razor\Views\Manager\MediaPlanPreference.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.StaticWebAssets.xml
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.exe
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.deps.json
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.runtimeconfig.json
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.runtimeconfig.dev.json
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.pdb
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.Views.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\AdvertisingAgency.Views.pdb
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.csproj.AssemblyReference.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.AssemblyInfoInputs.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.AssemblyInfo.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.csproj.CoreCompileInputs.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorAssemblyInfo.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorAssemblyInfo.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\staticwebassets\AdvertisingAgency.StaticWebAssets.Manifest.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.TagHelpers.input.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.TagHelpers.output.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorCoreGenerate.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Client\Index.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Client\Preference.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\CreativeManager\Index.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Director\Index.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Director\Partner.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Director\Staff.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Manager\ControleProject.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Index.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Manager\MediaPlanPreference.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\Razor\Views\Manager\Preference.cshtml.g.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorTargetAssemblyInfo.cache
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.RazorTargetAssemblyInfo.cs
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.Views.pdb
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.csproj.CopyComplete
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.dll
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.pdb
+C:\Users\ssult\OneDrive\Desktop\Подруга подруги Финал\AdvertisingAgency\obj\Debug\netcoreapp3.1\AdvertisingAgency.genruntimeconfig.cache

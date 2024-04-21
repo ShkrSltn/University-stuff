@@ -1,0 +1,7 @@
+C:\Users\Sultan\source\repos\HeroStrategy\HeroStrategy\bin\Debug\HeroStrategy.exe.config
+C:\Users\Sultan\source\repos\HeroStrategy\HeroStrategy\bin\Debug\HeroStrategy.exe
+C:\Users\Sultan\source\repos\HeroStrategy\HeroStrategy\bin\Debug\HeroStrategy.pdb
+C:\Users\Sultan\source\repos\HeroStrategy\HeroStrategy\obj\Debug\HeroStrategy.csprojAssemblyReference.cache
+C:\Users\Sultan\source\repos\HeroStrategy\HeroStrategy\obj\Debug\HeroStrategy.csproj.CoreCompileInputs.cache
+C:\Users\Sultan\source\repos\HeroStrategy\HeroStrategy\obj\Debug\HeroStrategy.exe
+C:\Users\Sultan\source\repos\HeroStrategy\HeroStrategy\obj\Debug\HeroStrategy.pdb

@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+    <link href="~/css/site.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+
+   <div class="topnav">
+  <a class="active" href="/Administrator/Employee">Управление сотрудниками</a>
+  <a href="/Administrator/Book">Упарвление книгами</a>
+  <a href="/Login">Выход</a>
+</div>
+    <div class="add_book">
+        <h1>Добавление нового сотрудника(библиотекаря)</h1>
+        <form class="form" action="/Administrator/Add_Employee">
+                   <input type="text" placeholder="Имя" name="first_name" />
+                     <input type="text" placeholder="Фамилия" name="second_name" />
+                   <input type="text" placeholder="Отчество" name="patronymic" />
+                    <input type="date" placeholder="Дата рождения" name="year_of_birtch" />
+                    <input type="text" placeholder="Номер телефона" name="telNo" />
+                    <input type="text" placeholder="Пароль" name="password" />
+                    <br /> <button class="button" type="submit">Зарегистрировать</button>
+        </form>
+                    
+    </div>
+
+    @if (@ViewBag.Message.str_message != "")
+    {   
+        @if (@ViewBag.Message.error == true)
+        {
+            <div id="Message" onclick="Close_Message()">
+                <h3>"Ошибка: " @ViewBag.Message.str_message</h3>
+            </div>
+        }
+        else
+        {
+            <div id="Message" onclick="Close_Message()">
+                <h3>@ViewBag.Message.str_message</h3>
+            </div>
+        }
+    }
+    <center><h1>Список сотрудников</h1></center>
+    @foreach (var e in ViewBag.Employees)
+    {
+        <div class="employee">
+            <p>@e.second_name  @e.first_name  @e.patronymic <span class="job">@e.position</span></p>
+        </div>
+    }
+
+    <script>
+        function Close_Message() {
+            document.getElementById("Message").remove();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+|Lab_5
+INO1 => OO.IN0
+INO2 => OO.IN1
+OO <= OO.DB_MAX_OUTPUT_PORT_TYPE
+
+

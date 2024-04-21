@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C43FDC"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/infoView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Info"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:id="@+id/loveView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Love"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:id="@+id/handLinesView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hand Lines"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:id="@+id/fulltestView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Full Test"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="0sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/zodiacCompView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Zodiac Comp."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:id="@+id/NameCompView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Name Comp."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:id="@+id/DateCompView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Date Comp."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+
+        <Button
+            android:id="@+id/LoveCompView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Love Comp."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="2sp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/CancerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:gravity="center"
+            android:text="\u264b Cancer
+        06/21 - 07/22"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LeoView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\u264C Leo
+              07/23 - 08/22"
+            android:background="@drawable/buttonselector"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/VirgoView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/buttonselector"
+            android:text="\u264D Virgo
+            08/23 - 09/22"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="0sp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LibraView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\u264E Libra
+          09/23 - 10/22"
+            android:background="@drawable/buttonselector"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ScropioView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\u2651 Scorpio
+        10/23 - 11/21"
+            android:background="@drawable/buttonselector"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/SagitaView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\u2650 Sagittarius
+        11/22 - 12/21"
+            android:background="@drawable/buttonselector"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="0sp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/CapricornView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:rotationX="0"
+            android:text="\u2651 Capricorn
+        12/22 - 01/19"
+            android:background="@drawable/buttonselector"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AquaView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="\u2652 Aquarius
+        01/20 - 02/18"
+            android:background="@drawable/buttonselector"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/PiscesViw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonselector"
+            android:gravity="center"
+            android:text=" \u2653 Pisces
+    02/19 - 03/20"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonCheck"
+            android:layout_width="378dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginHorizontal="10dp"
+            android:text="Check"
+            android:textSize="35dp"
+            app:backgroundTint="@android:color/holo_blue_bright" />
+
+    </LinearLayout>
+
+</LinearLayout>

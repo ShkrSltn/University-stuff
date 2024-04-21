@@ -1,0 +1,130 @@
+$comment
+	File created using the following command:
+		vcd file lab_1.msim.vcd -direction
+$end
+$date
+	Tue May 10 18:56:59 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module lab_1_vhd_vec_tst $end
+$var wire 1 ! INO1 $end
+$var wire 1 " INO2 $end
+$var wire 1 # OO $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var wire 1 ' devoe $end
+$var wire 1 ( devclrn $end
+$var wire 1 ) devpor $end
+$var wire 1 * ww_devoe $end
+$var wire 1 + ww_devclrn $end
+$var wire 1 , ww_devpor $end
+$var wire 1 - ww_INO1 $end
+$var wire 1 . ww_INO2 $end
+$var wire 1 / ww_OO $end
+$var wire 1 0 \OO~output_o\ $end
+$var wire 1 1 \INO2~input_o\ $end
+$var wire 1 2 \INO1~input_o\ $end
+$var wire 1 3 \OO~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+1*
+1+
+1,
+0-
+0.
+0/
+00
+01
+02
+03
+$end
+#1000
+1"
+1.
+11
+13
+10
+1/
+1#
+#2000
+0"
+1!
+0.
+1-
+12
+01
+#3000
+1"
+1.
+11
+#4000
+0"
+0!
+0.
+0-
+02
+01
+03
+00
+0/
+0#
+#5000
+1"
+1.
+11
+13
+10
+1/
+1#
+#6000
+0"
+1!
+0.
+1-
+12
+01
+#7000
+1"
+1.
+11
+#8000
+0"
+0!
+0.
+0-
+02
+01
+03
+00
+0/
+0#
+#9000
+1"
+1.
+11
+13
+10
+1/
+1#
+#10000

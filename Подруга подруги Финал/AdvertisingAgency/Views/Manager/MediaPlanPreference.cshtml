@@ -1,0 +1,68 @@
+﻿@using AdvertisingAgency.Models;
+@using AdvertisingAgency.Models.CompositeModel;
+
+<html>
+        <head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href="~/css/director_style.css" rel="stylesheet" type="text/css">
+     <link href="~/css/nav_style.css" rel="stylesheet" type="text/css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="nav">
+            <ul class="main_nav">
+                <li ><a href="/Manager">Главная</a></li>
+                <li class="active"> <a href="/Manager/Preference">Заказы</a></li>
+                <li> <a href="/Manager/Out">Выйти</a></li>
+            </ul>
+    </div>
+    <div>
+        <div class="prefferences">
+            <p>Название компании @ViewBag.Preference.client.company_name</p>
+            <p>Директор @ViewBag.Preference.client.director</p>
+            <p>Город @ViewBag.Preference.client.city улица @ViewBag.Preference.client.street</p>
+            <p>Email @ViewBag.Preference.client.email Номер телефона @ViewBag.Preference.client.tel</p>
+            <p>Аудитория @ViewBag.Preference.preference.audience</p>
+            <p>Каткое описание @ViewBag.Preference.preference.preculiarities</p>
+            <p>Максимальнпая сумма @ViewBag.Preference.preference.max_sum</p>
+            <p>Период @ViewBag.Preference.preference.period</p>
+        </div>
+        @if(ViewBag.Service == null)
+         {
+            @foreach(Partners_Services parter in ViewBag.Partners)
+             {
+                <div >
+                    <p>Компания @parter.partners.name</p>
+                    @foreach(TypeOfServiceModel service in parter.services)
+                    {
+                        <div>
+                            <p>Тип @service.platform_type</p>
+                            <p>Цена за 1 показ @service.price</p>
+                            <a href="/Manager/SelectParterServise/@service.id">Выбрать</a>
+                        </div>
+                    }
+                </div>
+             }
+         }
+         else
+         {
+            <form class="container" action="/Manager/AddMediaPlan">
+                <ul>
+                    <li>
+                        <label>Показов в день</label>
+                    </li>
+                    <li>
+                        <input class="form-control" type="number" name="broadcast"/>
+                    </li>
+                </ul>
+                <button class="btn btn-success" type="submit">Создать медиа план</button>
+            </form>
+         }
+    </div>
+</body>
+</html>

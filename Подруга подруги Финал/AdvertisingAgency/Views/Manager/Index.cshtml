@@ -1,0 +1,43 @@
+﻿@using AdvertisingAgency.Models;
+@using AdvertisingAgency.Models.CompositeModel;
+
+<html>
+    <head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href="~/css/director_style.css" rel="stylesheet" type="text/css">
+     <link href="~/css/nav_style.css" rel="stylesheet" type="text/css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+      <div class="nav">
+            <ul class="main_nav">
+                <li class="active"><a href="/Manager">Главная</a></li>
+                <li> <a href="/Manager/Preference">Заказы</a></li>
+                <li> <a href="/Manager/Out">Выйти</a></li>
+            </ul>
+    </div>
+
+    <div>
+                <h1>Список принятых заказов</h1>
+    <div class="prefferences">
+
+        @foreach (Preference_MediaPlan media in ViewBag.WorkingMediaPlan)
+        {
+            <p>Возрастная группа @media.preference.audience</p>
+            <p>Краткое содержание @media.preference.preculiarities</p>
+            <p>Период @media.preference.period</p>
+            <p>Максимальная сумма @media.preference.max_sum</p>
+            <p>Количество показав в сутки @media.mediaPlan.broadcast_time</p>
+            <p>Цена за услуги @media.mediaPlan.price</p>
+            <a href="/manager/ControleProject/@media.preference.id">Управление заказом</a>
+        }
+    </div>
+    </div>
+</body>
+</html>

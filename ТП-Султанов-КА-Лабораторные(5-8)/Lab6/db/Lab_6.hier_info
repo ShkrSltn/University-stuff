@@ -1,0 +1,9 @@
+|Lab_6
+D => Q1.DATAIN
+C => Q1.CLK
+C => Q~reg0.CLK
+R => Q~reg0.ACLR
+R => Q1.ACLR
+Q << Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

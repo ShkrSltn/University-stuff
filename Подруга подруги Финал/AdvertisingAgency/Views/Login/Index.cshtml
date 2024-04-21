@@ -1,0 +1,77 @@
+﻿<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <link href="~/css/reg_log_style.css" rel="stylesheet" type="text/css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+
+<header >
+    <center>
+    </center>
+</header>
+
+<body onload="Form_Load()">
+
+      <div class="login-page" id="Authorization">
+        <div class="form">
+             <img src="~/css/user.png" alt="Paris">    
+        <form class=".login-form" action="/Login/ToLogin">
+      <input type="text" name = "tel" placeholder="Телефон или e-mail"/>
+      <input type="text" name="password" placeholder="password"/>
+      <button  type="submit">Войти</button>
+    </form>
+   <button onclick="Registration()">Регистрация</button>
+    </div>
+
+    </div>
+
+  
+    
+     <div class="form" id="Registration">
+        <form action="/Login/Register">
+                    <input type="text" placeholder="Название компании" name="company_name" />
+                     <input type="text" placeholder="Город" name="city" />
+                      <input type="text" placeholder="Улица" name="street" />
+                    <input type="text" placeholder="Имя" name="first_name" />
+                    <input type="text" placeholder="Фамилия" name="last_name" />
+                    <input type="tel" placeholder="Номер телефона" name="tel" />
+                     <input type="text" placeholder="Электронная почта" name="email" />
+                    <input type="password" placeholder="Пароль" name="password" />
+                    <button type="submit">Зарегистрировать</button>
+        </form>
+   <button onclick="Authorization()">Авторизация</button>
+    </div>
+
+      <script>
+        let Authorization_div;
+        let Registration_div;
+
+        function Form_Load() {
+            Authorization_div = document.getElementById("Authorization");
+            Registration_div = document.getElementById("Registration");
+
+            document.getElementById("Registration").remove();
+        }
+
+        function Registration() {
+            document.getElementById("Authorization").remove();
+
+            document.body.appendChild(Registration_div);
+        }
+
+        function Authorization() {
+            document.getElementById("Registration").remove();
+
+            document.body.appendChild(Authorization_div);
+        }
+
+        function Close_Message() {
+            document.getElementById("Message").remove();
+        }
+    </script>
+
+</body>
+</html>

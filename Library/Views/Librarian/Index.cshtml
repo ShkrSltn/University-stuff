@@ -1,0 +1,141 @@
+﻿<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <link href="~/css/site.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="Load_Form()">
+
+   <div class="topnav">
+  <a href="/Login">Выход</a>
+</div>
+    <h1><span class="job">Библиотекарь: </span>@ViewBag.Employee.first_name @ViewBag.Employee.second_name</h1>
+
+    <div class="form-group col-md-4" id="give_book" action="Issue_book">
+        <h1>Выдача книг</h1>
+               <form action="/Librarian/IssueBook">
+                    <input class="form-control" type="text" placeholder="Название книги" name="book_name" />
+                    <input class="form-control" type="text" placeholder="Номер телефона клиента" name="telNo" />
+                   <br /> <button class="btn btn-outline-dark" type="submit">Выдать</button>
+        </form>
+
+    </div>
+
+
+    <div class="form-group col-md-4" id="give_book">
+        <h1>Возвращение книги</h1>
+        <form action="/Librarian/Return_Book">
+                    <input class="form-control" placeholder="Номер книги" type="number" name="bookNo" />
+                   <br /> <button class="btn btn-outline-dark" type="submit">Принять</button>
+    </form>
+    </div>
+      
+    <div class="book_search">
+          <h1 >Поиск книги</h1>
+    <button class="btn btn-outline-dark" onclick="Find_by_name()">Найти по названию</button>
+    <button class="btn btn-outline-dark" onclick="Find_by_author()">Найти по автору</button>
+    <button class="btn btn-outline-dark" onclick="Find_by_publisher()">Найти по изданию</button>
+    </div>
+
+    <div class="form-group col-md-4" id="Find_book_by_name">
+        <h1>Найти книгу по названию</h1>
+        <form action="/Librarian/Find_Book">
+                    <input class="form-control" placeholder="Название книги" type="text" name="name_book" />
+                   <br /> <button class="btn btn-outline-dark" type="submit">Найти</button>
+        </form>
+    </div>
+
+    <div class="form-group col-md-4" id="Find_book_by_author">
+        <h1>Найти книги по автору</h1>
+        <form action="/Librarian/Find_Author">
+                    <input class="form-control" placeholder="Автор" type="text" name="name_author" />
+                   <br /> <button class="btn btn-outline-dark" type="submit">Найти</button>
+        </form>
+    </div>
+
+    <div class="form-group col-md-4" id="Find_book_by_publsher">
+        <h1>Найти книги по изданию</h1>
+        <form action="/Librarian/Find_Publisher">
+                    <input class="form-control" placeholder="Издатель" type="text" name="name_publisher" />
+                    <br /><button class="btn btn-outline-dark" type="submit">Найти</button>
+        </form>
+    </div>
+
+
+    @if (@ViewBag.Message.str_message != "")
+    {
+        @if (@ViewBag.Message.error == true)
+        {
+            <div id="Message" onclick="Message_Close()">
+                <h3>Ошибка @ViewBag.Message.str_message</h3>
+            </div>
+        }
+        else
+        {
+            <div id="Message" onclick="Message_Close()">
+                <h3>@ViewBag.Message.str_message</h3>
+                <button class="btn btn-outline-dark"> Отдать</button>
+            </div>
+        }
+    }
+
+    <div > 
+        @foreach (var b in @ViewBag.Books)
+        {
+            <div class="book_search_process">
+                <p>Название: @b.name_book</p>
+                <p>Автор: @b.str_author</p>
+                <p>Издание: @b.str_publisher</p>
+                <p>Количество: @b.number_of_copies</p>
+
+            </div>
+        }
+    </div>
+
+    <script>
+        let form_by_name;
+        let form_by_author;
+        let form_by_publiher;
+
+        function Load_Form() {
+            form_by_name = document.getElementById("Find_book_by_name");
+            form_by_author = document.getElementById("Find_book_by_author");
+            form_by_publiher = document.getElementById("Find_book_by_publsher");
+
+            document.getElementById("Find_book_by_name").remove();
+            document.getElementById("Find_book_by_author").remove();
+            document.getElementById("Find_book_by_publsher").remove();
+        }
+
+        function Find_by_name() {
+            if (document.getElementById("Find_book_by_author") != null)
+                document.getElementById("Find_book_by_author").remove();
+            if (document.getElementById("Find_book_by_publsher") != null)
+                document.getElementById("Find_book_by_publsher").remove();
+
+            document.body.appendChild(form_by_name);
+        }
+
+        function Find_by_author() {
+            if (document.getElementById("Find_book_by_name") != null)
+                document.getElementById("Find_book_by_name").remove();
+            if (document.getElementById("Find_book_by_publsher") != null)
+                document.getElementById("Find_book_by_publsher").remove();
+
+            document.body.appendChild(form_by_author);
+        }
+
+        function Find_by_publisher() {
+            if (document.getElementById("Find_book_by_name") != null)
+                document.getElementById("Find_book_by_name").remove();
+            if (document.getElementById("Find_book_by_author") != null)
+                document.getElementById("Find_book_by_author").remove();
+
+            document.body.appendChild(form_by_publiher);
+        }
+
+        function Message_Close() {
+            document.getElementById("Message").remove();
+        }
+    </script>
+</body>
+</html>

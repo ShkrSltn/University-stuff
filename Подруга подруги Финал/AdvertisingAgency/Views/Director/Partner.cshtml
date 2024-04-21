@@ -1,0 +1,79 @@
+﻿@using AdvertisingAgency.Models;
+@using AdvertisingAgency.Models.CompositeModel;
+
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+     <link href="~/css/director_style.css" rel="stylesheet" type="text/css">
+     <link href="~/css/nav_style.css" rel="stylesheet" type="text/css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+<div class="nav">
+            <ul class="main_nav">
+                <li class="active"><a href="#">Партнеры</a></li>
+                <li><a href="/Director/Staff">Сотрудники</a></li>
+                <li> <a href="/Director/Out">Выйти</a></li>
+            </ul>
+    </div>
+
+    <div class="container">
+  <form action="/director/AddPartner">
+    <div class="form-group">
+      <label for="company_name">Название компании:</label>
+      <input type="text" class="form-control" id="company_name" placeholder="Введите название компании">
+    </div>
+    <button type="submit" class="btn btn-success">Добавить компанию</button>
+  </form>
+    </div>
+
+
+
+    <div>
+        @foreach(Partners_Services partner in ViewBag.Partners)
+         {
+            <div>
+                <div class="prefferences">
+                    <p>Партнёр @partner.partners.name</p>
+                    @foreach(TypeOfServiceModel service in partner.services)
+                     {
+                        <p>Тип услуги @service.platform_type</p>
+                        <p>Цена за один показ рекламы @service.price</p>
+                     }
+                </div>
+
+                <div class="container">
+                    <h1>Форма добавления новой услугу партнёру @partner.partners.name</h1>
+                    <form class="container" action="/Director/AddService">
+                        <ul>
+                            <li class="invisible">
+                                <input class="invisible form-control" type="number" name="partner" value="@partner.partners.id" />
+                            </li>
+                            <li>
+                                <label>Названия услуги</label>
+                            </li>
+                            <li>
+                                <input class="form-control" type="text" name="name" />
+                            </li>
+                            <li>
+                                <label>Цена за один показ</label>
+                            </li>
+                            <li>
+                                <input class="form-control" type="number" name="price" />
+                            </li>
+                        </ul>
+                        <button class="btn btn-success" type="submit">Добавить</button>
+                    </form>
+                </div>
+            </div>
+         }
+    </div>
+</body>
+</html>

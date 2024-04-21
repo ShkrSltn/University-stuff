@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\прога\HachTablLab\obj\Debug\netcoreapp3.1\HachTablLab.csprojAssemblyReference.cache
+C:\Users\User\Desktop\прога\HachTablLab\obj\Debug\netcoreapp3.1\HachTablLab.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\прога\HachTablLab\obj\Debug\netcoreapp3.1\HachTablLab.AssemblyInfo.cs
+C:\Users\User\Desktop\прога\HachTablLab\bin\Debug\netcoreapp3.1\HachTablLab.exe
+C:\Users\User\Desktop\прога\HachTablLab\bin\Debug\netcoreapp3.1\HachTablLab.deps.json
+C:\Users\User\Desktop\прога\HachTablLab\bin\Debug\netcoreapp3.1\HachTablLab.runtimeconfig.json
+C:\Users\User\Desktop\прога\HachTablLab\bin\Debug\netcoreapp3.1\HachTablLab.runtimeconfig.dev.json
+C:\Users\User\Desktop\прога\HachTablLab\bin\Debug\netcoreapp3.1\HachTablLab.dll
+C:\Users\User\Desktop\прога\HachTablLab\bin\Debug\netcoreapp3.1\HachTablLab.pdb
+C:\Users\User\Desktop\прога\HachTablLab\obj\Debug\netcoreapp3.1\HachTablLab.dll
+C:\Users\User\Desktop\прога\HachTablLab\obj\Debug\netcoreapp3.1\HachTablLab.pdb

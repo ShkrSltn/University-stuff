@@ -1,0 +1,10 @@
+D:\С# Проэкти\Lab_2_Contour\obj\Debug\Lab_2_Contour.csprojAssemblyReference.cache
+D:\С# Проэкти\Lab_2_Contour\obj\Debug\Lab_2_Contour.Form1.resources
+D:\С# Проэкти\Lab_2_Contour\obj\Debug\Lab_2_Contour.Properties.Resources.resources
+D:\С# Проэкти\Lab_2_Contour\obj\Debug\Lab_2_Contour.csproj.GenerateResource.cache
+D:\С# Проэкти\Lab_2_Contour\obj\Debug\Lab_2_Contour.csproj.CoreCompileInputs.cache
+D:\С# Проэкти\Lab_2_Contour\bin\Debug\Lab_2_Contour.exe.config
+D:\С# Проэкти\Lab_2_Contour\bin\Debug\Lab_2_Contour.exe
+D:\С# Проэкти\Lab_2_Contour\bin\Debug\Lab_2_Contour.pdb
+D:\С# Проэкти\Lab_2_Contour\obj\Debug\Lab_2_Contour.exe
+D:\С# Проэкти\Lab_2_Contour\obj\Debug\Lab_2_Contour.pdb

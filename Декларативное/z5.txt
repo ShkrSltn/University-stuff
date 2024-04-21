@@ -1,0 +1,119 @@
+implement main
+    open core, console
+
+domains
+    list = integer*.
+
+class predicates
+    len : (integer*, integer [out]).
+    sum : (integer*, integer [out]).
+    prod : (integer*, integer [out]).
+    sort : (integer*, integer* [out]).
+    swap : (integer*, integer* [out]) nondeterm.
+    ins_sort : (integer*, integer* [out]).
+    insert : (integer, integer*, integer* [out]).
+    asc_order : (integer, integer) determ.
+    quicksort : (list, list [out]).
+    split : (integer, list, list [out], list [out]).
+    concatenate : (list, list, list [out]).
+
+clauses
+    len([], 0) :-
+        !.
+    len([_X | Xs], 1 + S) :-
+        len(Xs, S).
+
+    sum([], 0) :-
+        !.
+    sum([X | Xs], S + X) :-
+        sum(Xs, S).
+
+    prod([], 1) :-
+        !.
+    prod([X | Xs], P * X) :-
+        prod(Xs, P).
+
+    sort(L, S) :-
+        swap(L, M),
+        !,
+        sort(M, S).
+    sort(L, L) :-
+        !.
+    swap([X, Y | R], [Y, X | R]) :-
+        X > Y.
+    swap([X | R], [X | R1]) :-
+        swap(R, R1).
+
+    ins_sort([], []).
+    ins_sort([X | T1], L) :-
+        sort(T1, L1),
+        insert(X, L1, L).
+    insert(X, [Y | L], [Y | L1]) :-
+        asc_order(X, Y),
+        !,
+        insert(X, L, L1).
+        /* вставляет первый аргумент в список, заданный в качестве второго аргумента, результат третий аргумент */
+    insert(X, L, [X | L]).
+        /* вспомогательный предикат */
+    asc_order(X, Y) :-
+        X > Y.
+
+    quicksort([], []).
+    quicksort([Head | Tail], SortedList) :-
+        split(Head, Tail, SList, BList),
+        quicksort(SList, SList1),
+        quicksort(BList, BList1),
+        concatenate(SList1, [Head | Blist1], SortedList).
+
+    split(_, [], [], []).
+    split(Item, [Head1 | Tail1], [Head1 | SList], BList) :-
+        Item > Head1,
+        !,
+        split(Item, Tail1, SList, BList).
+    split(Item, [Head1 | Tail1], SList, [Head1 | BList]) :-
+        split(Item, Tail1, SList, BList).
+
+    concatenate([], List, List).
+    concatenate([Item | List1], List2, [Item | List3]) :-
+        concatenate(List1, List2, List3).
+
+    run() :-
+        init(),
+        write("Введите список в квадратных скобках с запятыми"),
+        nl,
+        nl,
+        write("Список -> "),
+        List1 = read(),
+        nl, % Список чисел
+        _ = readchar(),
+        len(List1, A),
+        write("Длинна списка: ", A),
+        nl,
+        nl,
+        sum(List1, S),
+        write("Сумма элементов списка: ", S),
+        nl,
+        nl,
+        prod(List1, P),
+        write("Произведение элементов списка: ", P),
+        nl,
+        nl,
+        sort(List1, NewList),
+        write("Отсорт список(пузырки): ", NewList),
+        nl,
+        nl,
+        ins_sort(List1, ListVstavka),
+        write("Отсорт список(вставками): ", ListVstavka),
+        nl,
+        nl,
+        quicksort(List1, ListQuick),
+        write("Отсорт список(быстрая): ", ListQuick),
+        nl,
+        nl,
+        write("Конец. Нажмите любую клавишу "),
+        _ = readchar().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

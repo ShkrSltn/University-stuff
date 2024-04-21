@@ -1,0 +1,74 @@
+﻿<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="~/css/site.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <div class="topnav">
+  <a  href="/Administrator/Employee">Управление сотрудниками</a>
+  <a class="active" href="/Administrator/Book">Упарвление книгами</a>
+  <a href="/Login">Выход</a>
+</div>
+
+    <div class="add_book">
+        <h1>Добавление новой книги</h1>
+        <form class="form" action="/Administrator/Add_Now_Book">
+                    <input type="text" placeholder="Название книги" name="book_name" />
+                    <input type="text" placeholder="Название автора" name="author_name" />
+                    <input type="text" placeholder="Название издателя" name="publisher" />
+                    <input type="text" placeholder="Жанр" name="genre" />
+                    <input type="number" placeholder="Количество экземпляров" name="count" />
+                    <input type="number" placeholder="Количество страниц" name="pages" />
+                    <input type="date" placeholder="Дата" name="year" />
+                    <br /><button class="button2" type="submit">Добавить новую книгу</button>
+        </form>
+                    
+    </div>
+
+    <div class="add_books">
+        <h1>Добавление экземпляров книг</h1>
+        <form class="form" action="/Administrator/Add_Book">
+                    <input type="text" placeholder="Название книги" name="book_name"/>
+                    <input type="number" placeholder="Количество" name="count" />
+                    <br /><button class="button2" type="submit">Добавить книги</button>
+        </form>
+         
+    </div>
+
+    @foreach (var m in @ViewBag.Messages)
+    {
+        @if (@m.str_message != "")
+        {
+            @if (@m.error == true)
+            {
+                <div id="Message" onclick="Close_Message()">
+                    <h3>"Ошибка: " @m.str_message</h3>
+                </div>
+            }
+            else
+            {
+                <div id="Message" onclick="Close_Message()">
+                    <h3>@m.str_message</h3>
+                </div>
+            }
+        }
+    }
+
+    <div class="all_books">
+        <h1>Список книг</h1>
+        @foreach (var b in @ViewBag.Books)
+        {
+            <div class="book">
+                <h3>@b.name_book</h3>
+               
+            </div>
+        }
+    </div>
+
+    <script>
+        function Close_Message() {
+            document.getElementById("Message").remove();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    str_list = string*.
+
+class predicates
+    player : (string, integer) determ.
+    player : (string, integer [out]) determ.
+    player : (string [out], integer [out]) multi.
+    pair : (str_list) determ.
+    check : (string, string) determ.
+    find_pair : (string, str_list) determ.
+    condition : (string, string) determ.
+    output : (string, string).
+
+clauses
+    player("Андрей", 3).
+    player("Саня", 3).
+    player("Василий", 2).
+    player("Максим", 1).
+    player("Руслан", 1).
+
+    pair([]) :-
+        !.
+
+    pair([Player | Pair]) :-
+        pair(Pair),
+        find_pair(Player, Pair).
+
+    check(Player1, Player2) :-
+        condition(Player2, Player1),
+        output(Player2, Player1).
+
+    find_pair(_, []) :-
+        !.
+
+    find_pair(Player1, [Player2 | Pair]) :-
+        find_pair(Player1, Pair),
+        check(Player1, Player2).
+
+    condition(Player1, Player2) :-
+        player(Player1, League1),
+        player(Player2, League2),
+        Player1 <> Player2,
+        League1 <= League2.
+
+    output(Player1, Player2) :-
+        stdio::write(Player1, " против ", Player2, "\n").
+
+%---------------------------------------------------------------------
+    run() :-
+        Players = [ Player || player(Player, _League) ],
+        pair(Players),
+        nl,
+        _ = readLine(),
+        !.
+    run().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

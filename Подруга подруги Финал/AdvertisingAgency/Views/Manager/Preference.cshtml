@@ -1,0 +1,47 @@
+﻿@using AdvertisingAgency.Models;
+@using AdvertisingAgency.Models.CompositeModel;
+
+<html>
+
+<head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href="~/css/director_style.css" rel="stylesheet" type="text/css">
+     <link href="~/css/nav_style.css" rel="stylesheet" type="text/css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <div class="nav">
+            <ul class="main_nav">
+                <li ><a href="/Manager">Главная</a></li>
+                <li class="active"> <a href="/Manager/Preference">Заказы</a></li>
+                <li> <a href="/Manager/Out">Выйти</a></li>
+            </ul>
+    </div>
+
+    <div>
+        @foreach(Client_Preferense preference in ViewBag.Preferences)
+         {
+            <div class="prefferences">
+                <p>Название компании: @preference.client.company_name</p>
+                <p>Директор: @preference.client.director</p>
+                <p>Город: @preference.client.city улица @preference.client.street</p>
+                <p>Email: @preference.client.email Номер телефона @preference.client.tel</p>
+                <p>Аудитория: @preference.preference.audience</p>
+                <p>Каткое описание: @preference.preference.preculiarities</p>
+                <p>Максимальнпая сумма: @preference.preference.max_sum</p>
+                <p>Период: @preference.preference.period</p>
+                <a href="/Manager/MediaPlanPreference/@preference.preference.id">Выбрать</a>
+            </div>
+         }
+    </div>
+</body>
+</html>

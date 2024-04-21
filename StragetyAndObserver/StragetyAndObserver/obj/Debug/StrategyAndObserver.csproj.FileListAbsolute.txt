@@ -1,0 +1,7 @@
+C:\Users\Sultan\source\repos\StragetyAndObserver\StragetyAndObserver\bin\Debug\StragetyAndObserver.exe.config
+C:\Users\Sultan\source\repos\StragetyAndObserver\StragetyAndObserver\bin\Debug\StragetyAndObserver.exe
+C:\Users\Sultan\source\repos\StragetyAndObserver\StragetyAndObserver\bin\Debug\StragetyAndObserver.pdb
+C:\Users\Sultan\source\repos\StragetyAndObserver\StragetyAndObserver\obj\Debug\StrategyAndObserver.csproj.CoreCompileInputs.cache
+C:\Users\Sultan\source\repos\StragetyAndObserver\StragetyAndObserver\obj\Debug\StragetyAndObserver.exe
+C:\Users\Sultan\source\repos\StragetyAndObserver\StragetyAndObserver\obj\Debug\StragetyAndObserver.pdb
+C:\Users\Sultan\source\repos\StragetyAndObserver\StragetyAndObserver\obj\Debug\StrategyAndObserver.csprojAssemblyReference.cache

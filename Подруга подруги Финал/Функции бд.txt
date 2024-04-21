@@ -1,0 +1,95 @@
+Проверка сотрудника по телефону и паролю
+
+Create Function StaffLogin(Varchar, Varchar) Returns Integer As $$
+Select Staff.id 
+From Staff
+Join Staff_Position on Staff.id = Staff_Position.staff_id And Staff_Position.end_work isNull
+Where tel = $1 and password = $2;
+$$ Language SQL;
+
+Проверка клиента по телефону и паролю
+
+Create Function ClientLogin_Tel(Varchar, Varchar) Returns Integer As $$
+Select id From Client_company where tel = $1 and password = $2;
+$$ Language SQL;
+
+Проверка клиента по email и паролю
+
+Create Function ClientLogin_Email(Varchar, Varchar) Returns Integer As $$
+Select id From Client_company where email = $1 and password = $2;
+$$ Language SQL;
+
+Возвращает всю информацию про сотрудника по id
+
+Create Function getStaffById(Integer) Returns Table(first_name Varchar, last_name Varchar,day_of_birdch Date, sex Varchar, tel Varchar, password Varchar, staffPosition_id Integer, position_id Integer, start_work Date, end_work Date, Position_name Varchar,Position_salary Decimal(10,2)) As $$
+Select Staff.first_name, Staff.last_name, Staff.date_of_birthday, Staff.sex, Staff.tel, Staff.password, Staff_Position.id, Staff_Position.position_id, Staff_Position.start_work, Staff_Position.end_work, Position.name, Position.salary
+From Staff 
+Join Staff_Position on Staff_Position.staff_id = $1
+Join Position on Staff_Position.position_id = Position.id
+Where staff.id = $1;
+$$ Language SQL;
+
+Возвращает всю информацию про всех сотрудников
+
+Create Function getAllStaff() Returns Table(staff_id Integer, first_name Varchar, last_name Varchar,day_of_birdch Date, sex Varchar, tel Varchar, password Varchar, staffPosition_id Integer, position_id Integer, start_work Date, end_work Date, Position_name Varchar,Position_salary Decimal(10,2)) As $$
+Select staff.id, Staff.first_name, Staff.last_name, Staff.date_of_birthday, Staff.sex, Staff.tel, Staff.password, Staff_Position.id, Staff_Position.position_id, Staff_Position.start_work, Staff_Position.end_work, Position.name, Position.salary
+From Staff 
+Join Staff_Position on Staff_Position.staff_id = Staff.id
+Join Position on Staff_Position.position_id = Position.id
+$$ Language SQL;
+
+Возвращает все принятые листы
+
+Create Function GetAcceptedPreferenceList(Integer) Returns Table(Preference_id Integer, audience Varchar, preculiarities Varchar, period Integer, max_sum decimal(10,2), media_plan_id Integer, type_of_service Integer, staff_id Integer, broadcast Integer, price decimal(10,2), status Boolean) as $$
+Select Preference_list.id, Preference_list.audience, Preference_list.preculiarities, Preference_list.period, Preference_list.max_sum, Media_Plan.id, Media_plan.type_of_service_id, Media_plan.staff_id, Media_Plan.broadcast_time, Media_plan.price, Media_plan.status
+From Preference_list
+Join Media_plan on Media_plan.preference_list_id = preference_list.id
+Where preference_list.client_id = $1;
+$$ Language SQL;
+
+возвращяет все принятые листы менеджера
+
+Create Function GetAcceptedPreferenceListByStaff(Integer) Returns Table(Preference_id Integer, audience Varchar, preculiarities Varchar, period Integer, max_sum decimal(10,2), media_plan_id Integer, type_of_service Integer, staff_id Integer, broadcast Integer, price decimal(10,2), status Boolean) as $$
+Select Preference_list.id, Preference_list.audience, Preference_list.preculiarities, Preference_list.period, Preference_list.max_sum, Media_Plan.id, Media_plan.type_of_service_id, Media_plan.staff_id, Media_Plan.broadcast_time, Media_plan.price, Media_plan.status
+From Preference_list
+Join Media_plan on Media_plan.preference_list_id = preference_list.id and media_plan.staff_id = $1;
+$$ Language SQL;
+
+возвращает все не принятые листы
+
+Create Function GetPreferenceList() Returns Table(id Integer, Preference_client_id Integer, audience Varchar, preculiarities Varchar, period Integer, max_sum decimal(10,2), Client_id Integer, company_name Varchar, director Varchar, city Varchar, street Varchar, first_name Varchar, last_name Varchar, tel Varchar, email Varchar) as $$
+Select Preference_list.id, Preference_list.client_id, Preference_list.audience, Preference_list.preculiarities, Preference_list.period, Preference_list.max_sum, Client_Company.id, Client_Company.company_name, Client_Company.director, Client_company.city, Client_Company.street, Client_Company.first_name, Client_Company.last_name, Client_company.tel, Client_company.email
+From Preference_list
+Join Client_Company on preference_list.client_id = Client_Company.id
+Where Preference_list.id not in(
+	Select Media_plan.preference_list_id From Media_plan
+);
+$$ Language SQL;
+
+возвращает всех свободных креативных менеджеров
+
+Create Function GetAllFreeStaff() Returns Table(id Integer) As $$
+Select id 
+From Staff where id not in(
+	Select worker_id From Creative_work where work_status = false
+);
+$$ Language SQL;
+
+возвращает всех занятых
+
+Create Function GetAllBusyStaff(Integer) Returns Table(id Integer) As $$
+Select Staff.id 
+From Staff
+join Creative_work on creative_work.worker_id = Staff.id and creative_work.media_plan_id = $1;
+$$ Language SQL;
+
+
+Create OR REPLACE Function closeContract() Returns trigger as $$
+Begin
+	Update Contract set status = 'Расторгнут' Where id in (Select Contract.id From Contract Join Before_the_contract on Before_the_contract.contract_id = Contract.id);
+Return Old;
+End;
+$$ Language plpgsql;
+
+Create TRIGGER closeContract AFTER Update ON before_the_contract
+    FOR EACH ROW EXECUTE PROCEDURE closeContract();

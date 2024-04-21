@@ -1,0 +1,122 @@
+﻿@using AdvertisingAgency.Models;
+@using AdvertisingAgency.Models.CompositeModel;
+
+<html>
+    <head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href="~/css/director_style.css" rel="stylesheet" type="text/css">
+     <link href="~/css/nav_style.css" rel="stylesheet" type="text/css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="nav">
+            <ul class="main_nav">
+                <li class="active"><a href="#">Главное</a></li>
+                <li> <a href="/Client/Preference">Создать лист</a></li>
+                <li> <a href="/Client/Out">Выйти</a></li>
+            </ul>
+    </div>
+
+
+
+    @if (ViewBag.Preferences.Count > 0)
+     {
+        <div class="preff_block">
+            <h1>
+                Листы Предпочтений
+            </h1>
+            @foreach (PreferenseListModel preference in ViewBag.Preferences)
+             {
+                <div class="prefferences">
+                    <p class="font-weight-bold">Возрастная группа: @preference.audience</p>
+                    <p class="font-weight-bold">Краткое содержание: @preference.preculiarities</p>
+                    <p class="font-weight-bold">Период: @preference.period</p>
+                    <p class="font-weight-bold">Максимальная сумма: @preference.max_sum</p>
+                </div>
+             }
+        </div>
+     }
+     <div class="preff_block">
+    @if (ViewBag.AcceptedPreference.Count > 0)
+     {
+        <p>Принятые Листы предпочтений</p>
+        @foreach (Preference_MediaPlan preference in ViewBag.AcceptedPreference)
+         {
+            <div class="prefferences">
+                <p>Возрастная группа @preference.preference.audience</p>
+                <p>Краткое содержание @preference.preference.preculiarities</p>
+                <p>Период @preference.preference.period</p>
+                <p>Максимальная сумма @preference.preference.max_sum</p>
+                <p>Количество показав в сутки @preference.mediaPlan.broadcast_time</p>
+                <p>Цена за услуги @preference.mediaPlan.price</p>
+                @if (preference.mediaPlan.status)
+                 {
+                    <form class="container" action="/Client/EnterIntoAContract">
+                        <ul>
+                            <li>
+                                <input class="form-control" name="preference_id" value="@preference.preference.id" />
+                            </li>
+                            <li>
+                                <label>Почтовый интекс</label>
+                            </li>
+                            <li>
+                                <input class="form-control" type="text" name="post_code" />
+                            </li>
+                            <li>
+                                <label>Индентификационный код</label>
+                            </li>
+                            <li>
+                                <input class="form-control" type="number" name="inn" />
+                            </li>
+                            <li>
+                                <label>Максимальная сумма</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="1" name="payment_method" value="Наличными" />
+                                <label for="1">Наличными</label>
+                                <input type="radio" id="2" name="payment_method" value="Карта" />
+                                <label for="2">Карта</label>
+                            </li>
+                        </ul>
+                        <button class="btn btn-success" type="submit">Заключить контракт</button>
+                    </form>
+                 }
+            </div>
+         }
+     }
+     </div>
+     <div class="preff_block">
+    @if (ViewBag.ContractPreference.Count > 0)
+     {
+        <p>Договора</p>
+        @foreach (Preference_MediaPlan preference in ViewBag.ContractPreference)
+         {
+            <div class="prefferences">
+                <p>Возрастная группа @preference.preference.audience</p>
+                <p>Краткое содержание @preference.preference.preculiarities</p>
+                <p>Период @preference.preference.period</p>
+                <p>Максимальная сумма @preference.preference.max_sum</p>
+                <p>Количество показав в сутки @preference.mediaPlan.broadcast_time</p>
+                <p>Цена за услуги @preference.mediaPlan.price</p>
+                @if (preference.contract.status == "Выполняеться")
+                 {
+                    <a href="/Client/CloseContract/@preference.before.id">Расторгнуть договор</a>
+                 }
+                 else
+                 {
+                    <p>Статус контракта @preference.contract.status</p>
+                 }
+            </div>
+         }
+     }
+     </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body{
+    background-color: #D3D8B6;
+}
+
+#body{
+    background-color: #E7EAD3;
+    width: 1200px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+table{
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+th,td{
+    border-style: solid;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+th{
+    border-radius: 20px 20px 0 0;
+}
+
+td{
+    border-radius: 0 0 20px 20px;
+}
+
+#th{
+    border-radius: 20px 20px 20px 20px;
+}
+
+.tr1 th,.tr1 td,.tr1 tr{
+    background-color: bisque;
+    color: #000;
+}
+
+.tr2 th,.tr2 td,.tr2 tr{
+    background-color:burlywood;
+    color: #000;
+}
+
+tfoot td{
+    border-radius: 20px;
+}
+
+#cliptop{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    padding: 12px 24px;
+}
+
+ul a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-style: solid;
+}
+
+#panel{
+    margin-bottom: 200px;
+    text-align: center;
+}
